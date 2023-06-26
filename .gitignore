@@ -1,0 +1,6 @@
+node_modules
+.env
+
+# documentos dentro da pasta
+static/public/*
+!static/public/.gitkeep
