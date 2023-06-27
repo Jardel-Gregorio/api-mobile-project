@@ -32,7 +32,7 @@ module.exports = {
     try {
       const jaExiste = await pool.query(
         `
-        SELECT id, FROM public.unidade
+        SELECT id FROM public.unidade
         WHERE nome = $1`,
         [nome],
       );
