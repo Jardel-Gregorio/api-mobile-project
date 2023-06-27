@@ -6,7 +6,7 @@ module.exports = {
 
     try {
       const results = await pool.query(
-        `SELECT cpf, login FROM public.exame
+        `SELECT cpf, login FROM public.usuario
           WHERE login = $1 AND senha = $2`,
         [login, senha],
       );
